@@ -177,3 +177,81 @@ ul { list-style: none; }
 .sidebar a { display: block; height: 49px; padding: 0 20px; line-height: 49px; font-size: 14px; font-weight: 600; background: #101114; border-top: 1px solid var(--line); }
 .sidebar a:first-child { height: 44px; line-height: 44px; border: 0; background: var(--blue-soft); font-weight: 400; font-size: 12px; }
 .sidebar a:hover { background: #1a1b20; }
+
+/* ======================= mobile (< 900px) ======================= */
+@media (max-width: 900px) {
+  .page { width: 100%; zoom: 1; padding: 0 16px; }
+
+  /* nav: logo + cta сверху, ссылки строкой ниже */
+  .nav { position: relative; height: auto; flex-wrap: wrap; padding: 16px 0; gap: 12px; }
+  .nav ul { order: 3; width: 100%; justify-content: center; gap: 20px; }
+  .nav li { padding: 6px 0; }
+  .dropdown { display: none !important; }
+
+  /* hero: всё в колонку */
+  .hero { height: auto; display: flex; flex-direction: column; gap: 20px; padding-bottom: 8px; overflow: visible; isolation: isolate; }
+  .hero > * { position: static; }
+  .hero .bg { position: absolute; left: -16px; top: -80px; width: 100vw; height: 720px; object-fit: cover; object-position: 50% 0; z-index: -1; opacity: .7; }
+  .hero .glow { display: none; }
+  .pitch { width: 100%; padding-top: 16px; }
+  .pitch h1 { width: 100%; font-size: 40px; }
+  .pitch p { width: 100%; }
+  .hero .cat { width: 100%; height: auto; align-self: center; max-width: 480px; transform: rotate(-3.216deg); filter: drop-shadow(30px 4px 2px rgba(0, 0, 0, .25)); margin: -24px 0 -8px; }
+  .about { width: 100%; }
+  .stats { justify-content: space-between; }
+  .follow { align-self: flex-start; }
+
+  /* events: горизонтальная лента */
+  .events { padding: 0; height: auto; }
+  .events .row { margin-top: 32px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-width: none; }
+  .events .row::-webkit-scrollbar { display: none; }
+  .event { width: 260px; scroll-snap-align: start; }
+  .event img { width: 260px; height: 200px; }
+  .events > .center { position: static; margin-top: 24px; }
+
+  /* manifesto + bento */
+  .manifesto { margin-top: 96px; height: auto; }
+  .manifesto h2 { width: 100%; height: auto; font-size: 24px; line-height: 32px; }
+  .manifesto p { margin-top: 24px; }
+  .bento { margin: 40px 0 0; height: auto; padding: 16px; flex-direction: column; gap: 16px; }
+  .bento > * { width: 100%; height: auto; }
+  .b-built { min-height: 280px; }
+  .b-built h3 { font-size: 32px; line-height: 40px; }
+  .b-built p { width: auto; max-width: 300px; }
+  .b-team { height: 280px; }
+  .b-events { height: 240px; }
+  .b-portrait { height: 280px; }
+
+  /* committees */
+  .committees { margin-top: 96px; padding: 0; }
+  .grid .row { flex-direction: column; }
+  .card { height: auto; min-height: 220px; padding: 24px; }
+
+  /* why us */
+  .why { margin: 96px 0 0; height: auto; display: flex; flex-direction: column; gap: 16px; }
+  .why .ring { display: none; }
+  .why h2, .why .q { position: static !important; translate: none; width: 100%; }
+  .why h2 { order: -1; margin-bottom: 8px; }
+
+  /* gallery */
+  .gallery { margin-top: 96px; padding: 0; }
+  .g-grid { margin-top: 24px; gap: 16px; }
+  .g-grid .row { flex-direction: column; gap: 16px; }
+  .g-grid img, .g-grid .n, .g-grid .w { width: 100%; height: 220px; }
+  .gallery .center { margin-top: 24px; }
+
+  /* footer */
+  .footer { margin: 96px -16px 0; }
+  .cta { height: auto; padding: 120px 16px 80px; }
+  .cta::before { left: 0; top: -60px; width: 100%; height: calc(100% + 120px); }
+  .cta h2 { font-size: 28px; line-height: 36px; }
+  .cta h2 br { display: none; }
+  .cta p { width: 100%; }
+  .cta .center { flex-wrap: wrap; }
+  .bottom { height: auto; padding: 40px 16px; }
+
+  /* admissions */
+  .admissions { height: auto; }
+  .admissions .main { position: static; height: auto; padding: 16px 0 40px; }
+  .sidebar { position: static; width: 100%; }
+}
