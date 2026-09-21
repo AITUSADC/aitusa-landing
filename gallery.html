@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AITUSA — Галерея</title>
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <div class="page">
@@ -15,13 +15,14 @@
       <li><a href="index.html">Главная</a></li>
       <li><a href="committee.html">Комитеты</a>
         <div class="dropdown">
+          <a class="x" href="#"><img src="assets/ic-x-circle.svg" alt="Закрыть"></a>
           <a href="committee.html"><i class="ic"><img src="assets/icon-cap.svg" alt=""></i><div><b>Digital Transformation</b><span>Программы для получения степени бакалавра</span></div></a>
-          <a href="committee.html"><i class="ic"><img src="assets/icon-book.svg" alt=""></i><div><b>Science and Innovation</b><span>Программы для получения степени бакалавра</span></div></a>
+          <a class="bright" href="committee.html"><i class="ic"><img src="assets/icon-book.svg" alt=""></i><div><b>Science and Innovation</b><span>Программы для получения степени бакалавра</span></div></a>
           <a href="committee.html"><i class="ic"><img src="assets/icon-award.svg" alt=""></i><div><b>Culture and Events</b><span>Программы для получения степени бакалавра</span></div></a>
           <a href="committee.html"><i class="ic"><img src="assets/icon-globe2.svg" alt=""></i><div><b>External Relations</b><span>Программы для получения степени бакалавра</span></div></a>
           <a href="committee.html"><i class="ic"><img src="assets/icon-file.svg" alt=""></i><div><b>Academic Affairs</b><span>Программы для получения степени бакалавра</span></div></a>
-          <a href="committee.html"><i class="ic"><img src="assets/icon-trophy.svg" alt=""></i><div><b>Social Affairs</b><span>Программы для получения степени бакалавра</span></div></a>
-          <a href="committee.html"><i class="ic"><img src="assets/icon-camera.svg" alt=""></i><div><b>Media</b><span>Программы для получения степени бакалавра</span></div></a>
+          <a class="bright" href="committee.html"><i class="ic"><img src="assets/icon-trophy.svg" alt=""></i><div><b>Social Affairs</b><span>Программы для получения степени бакалавра</span></div></a>
+          <a class="bright" href="committee.html"><i class="ic"><img src="assets/icon-camera.svg" alt=""></i><div><b>Media</b><span>Программы для получения степени бакалавра</span></div></a>
         </div>
       </li>
       <li class="active"><a href="gallery.html">Галерея</a></li>
@@ -154,5 +155,6 @@
 <script>document.addEventListener("click", e => e.target.classList.contains("x") && e.target.closest("details").removeAttribute("open"));</script>
 
 </div>
+<script src="nav.js"></script>
 </body>
 </html>
