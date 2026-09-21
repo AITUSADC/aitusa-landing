@@ -262,7 +262,7 @@ h1, h2, h3 { font-weight: 700; }
   .page { width: 100%; zoom: 1; padding: 0 16px; }
 
   /* nav: только ссылки в ряд */
-  .nav { height: 64px; padding: 24px 16px; }
+  .nav { position: fixed; height: 64px; padding: 24px 16px; background: rgba(1, 1, 1, .12); backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); }
   .nav .lang, .nav > .pill { display: none; }
   .nav ul { flex: 1; justify-content: space-between; gap: 0; }
   .nav li { position: static; padding: 0; }
