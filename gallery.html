@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AITUSA — Галерея</title>
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 <div class="page">
@@ -152,7 +152,7 @@
     </div>
   </footer>
   </main>
-<script>document.addEventListener("click", e => e.target.classList.contains("x") && e.target.closest("details").removeAttribute("open"));</script>
+<script>document.addEventListener("click", e => { if (e.target.classList.contains("x")) e.target.closest("details").removeAttribute("open"); if (!e.target.closest(".filter")) document.querySelectorAll(".filter[open]").forEach(d => d.removeAttribute("open")); });</script>
 
 </div>
 <script src="nav.js"></script>
